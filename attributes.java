@@ -3,6 +3,10 @@ public class attributes {
     int y = 7;
     int z = 3;
     int s;
+    public int num1;
+    public int num2;
+    public int num3;
+    public int num1;
 
 public static void main(String[] args) {
     attributes myObj = new attributes();
