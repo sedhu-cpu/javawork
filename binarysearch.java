@@ -1,10 +1,11 @@
 import java.util.Scanner;
-import java.lang.reflect.Array;
+//import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class binarysearch {
     public static void main(String[] args) {
         int counter, num, item , array[], first, middle, last;
+
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the number of elements:");
@@ -40,18 +41,22 @@ public class binarysearch {
          middle =(first +last)/2;
 
          while(first<=last){
-             if(array[middle] < item)
+             if(array[middle] < item){
              first = middle + 1;
+             }
              else if(array[middle] == item){
                  System.out.println(item +" was found at location " + middle + ".");
                  break;
              }
              else {
-                 last = middle - 1;
+                 last = middle - 1;  
              }
+             middle = (first+last)/2;
+
              if(first > last){
-                 System.out.println(item+" was not found!");
+                 System.out.println(item +" was not found!");
              }
-         }
+             input.close();
+        }
     }
 }
