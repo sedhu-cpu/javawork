@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.*;
 public class prime {
     public static void main(String[] args) {
         int counter;
@@ -10,19 +10,20 @@ public class prime {
             System.out.println("The First "+num+" Prime Numbers are:");
             System.out.println(2);
         }
-        for(counter = 0; counter<=num; counter++){
-                int cnt = 0;
-                
-            for(int j = 2;j<= num; j++){
+   for(counter=2;counter<=num;counter++){
 
-                if(num % j == 0){
-                    cnt++;
-                    break;
-                }
-            }
-            if(cnt ==0 && num != 1){
-                System.out.println(num + " ");
-            }
+    for(int j = 2; ;j++){
+
+        if(num % j == 1){
+
+            System.out.println(num+" ");
+            break;
+
+        }else if(num % j == 0){
+            j++;
+            continue;
         }
     }
+   }
+}
 }
