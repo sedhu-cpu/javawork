@@ -21,7 +21,7 @@ public class prime {
             break;
         }
 
-        }
+    }
         if(remainder != 0){
 
             System.out.println(n);
