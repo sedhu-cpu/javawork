@@ -11,10 +11,10 @@ public class prime {
             System.out.println("The First "+num+" Prime Numbers are:");
             System.out.println(2);
         }
-   for(int counter=2; counter<=num ;  ){
-
-    for(int j = 2; j < n ;j++){
-
+   for(int counter=2; counter<=num ;  )
+   {
+    for(int j = 2; j < n ;j++)
+    {
         if(n % j == 0){
 
             flag = 0;
@@ -22,8 +22,8 @@ public class prime {
         }
 
     }
-        if(flag != 0){
-
+        if(flag != 0)
+        {
             System.out.println(n);
             counter++;
         }
