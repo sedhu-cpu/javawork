@@ -3,7 +3,7 @@ import java.util.*;
 public class prime {
     public static void main(String[] args) {
         int n = 3;
-        int remainder = 1;
+        int flag = 1;
         Scanner input = new Scanner(System.in);
         System.out.println("Enter The Number of prime numbers to be printed:");
         int num  = input.nextInt();
@@ -17,17 +17,17 @@ public class prime {
 
         if(n % j == 0){
 
-            remainder = 0;
+            flag = 0;
             break;
         }
 
     }
-        if(remainder != 0){
+        if(flag != 0){
 
             System.out.println(n);
             counter++;
         }
-        remainder = 1;
+        flag = 1;
         n++;
     }
 }
