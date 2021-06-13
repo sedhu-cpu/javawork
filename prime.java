@@ -2,28 +2,33 @@ import java.util.Scanner;
 import java.util.*;
 public class prime {
     public static void main(String[] args) {
-        int counter;
+        int n = 3;
+        int remainder = 1;
         Scanner input = new Scanner(System.in);
         System.out.println("Enter The Number of prime numbers to be printed:");
         int num  = input.nextInt();
-        if(num > 1){
+        if(num >= 1){
             System.out.println("The First "+num+" Prime Numbers are:");
             System.out.println(2);
         }
-   for(counter=2;counter<=num;counter++){
+   for(int counter=2; counter<=num ;  ){
 
-    for(int j = 2; ;j++){
+    for(int j = 2; j < n ;j++){
 
-        if(num % j == 1){
+        if(n % j == 0){
 
-            System.out.println(num+" ");
+            remainder = 0;
             break;
-
-        }else if(num % j == 0){
-            j++;
-            continue;
         }
+
+        }
+        if(remainder != 0){
+
+            System.out.println(n);
+            counter++;
+        }
+        remainder = 1;
+        n++;
     }
-   }
 }
 }
