@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.*;
 public class prime {
     public static void main(String[] args) {
         int n = 3;
@@ -24,7 +23,7 @@ public class prime {
     }
         if(flag != 0)
         {
-            System.out.println(n);
+            System.out.println(n+" ");
             counter++;
         }
         flag = 1;
