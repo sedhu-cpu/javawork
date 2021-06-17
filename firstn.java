@@ -7,7 +7,7 @@ public class firstn {
        System.out.println("First 100 prime numbers are:");
        System.out.println(2);
 
-    for(int i =2 ; i<=100 ; )
+    for(int i =2 ; i<=20 ; )
     {
        for(int j =2; j < n ;j++)
         {
