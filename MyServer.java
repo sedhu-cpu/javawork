@@ -8,7 +8,7 @@ DataInputStream din=new DataInputStream(s.getInputStream());
 DataOutputStream dout=new DataOutputStream(s.getOutputStream());  
 BufferedReader br=new BufferedReader(new InputStreamReader(System.in));  
   
-String str="hello",str2="Client";  
+String str="",str2="Client";  
 while(!str.equals("stop")){  
 str=din.readUTF();  
 System.out.println("client says: "+str);  
