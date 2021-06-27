@@ -8,11 +8,4 @@ public class encaps {
     public void setName(String newName){ //
         this.name = newName;
     }
-    public class Main{
-        public static void name(String[] args) {
-            Person myObj = new Person();
-            myObj.name = "John";
-            System.out.println(MyObj.name);
-        }
-    }
-}
+}// check w3 schools for ore info
