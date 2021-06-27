@@ -8,7 +8,10 @@ public class staticnonstatic {
         }
 
         public static void main(String[] args) {
+            System.out.println(" ");
             myStaticMethod();
+
+            System.out.println(" ");
             staticnonstatic myObj = new staticnonstatic();
             myObj.myPublicMethod();
         }      
