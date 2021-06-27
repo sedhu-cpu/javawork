@@ -8,4 +8,4 @@ public class encaps {
     public void setName(String newName){ //
         this.name = newName;
     }
-}// check w3 schools for ore info
+}// check w3 schools for more info
