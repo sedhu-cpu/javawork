@@ -1,20 +1,20 @@
 import java.util.Scanner;
 
-class Solution {
+class PalindromeLeet {
     int reverse = 0;
     public boolean isPalindrome(int x) {
+    int y = x;
      for(;x!=0;){
 
          int remain = x % 10;
          reverse =  reverse * 10 + remain;
          x = x/10;
-         
+
      }
-        System.out.println(reverse);
 
-        if(x == reverse){
+        if(y>=0 && y == reverse){
 
-            return true;
+                return true;
 
         }else{
 
@@ -24,7 +24,7 @@ class Solution {
     public static void main(String[] args) {
        Scanner input = new Scanner(System.in);
        int num = input.nextInt();
-       Solution myObj = new Solution();
+       PalindromeLeet myObj = new PalindromeLeet();
        System.out.println(myObj.isPalindrome(num));
         
     }
