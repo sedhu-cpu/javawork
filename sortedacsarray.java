@@ -1,7 +1,8 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.lang.reflect.Method;
 class sortedascarray{
-    public int removeDuplicates(int[] nums){
+    public int[] removeDuplicates(int[] nums){
     if(nums.length == 0){
             System.out.println("No Removal Operation can be performed");
         }
@@ -13,7 +14,7 @@ class sortedascarray{
                 k++;
                 nums[k] = nums[i];
         }
-        return k+1;
+        return nums; //define proper return type to make code work
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -24,9 +25,8 @@ class sortedascarray{
         for(int i = 0 ; i < counter; i++){
             x[i] = input.nextInt();
         }
-        System.out.println("The Result is:");
-        removeDuplicates myObj = new removeDuplicates();
-        myObj.removeDuplicates(x);
+        sortedascarray Myobj = new sortedascarray();
+        System.out.println(""+ Myobj.removeDuplicates(x));
 
     }
 }

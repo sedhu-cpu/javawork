@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class search {
     private static ArrayList<String> items = new ArrayList<String>();
@@ -53,6 +54,7 @@ public class search {
                     }
                 }
             }
+            Collections.sort(items);
             System.out.println(items);
             input.close();
     }
